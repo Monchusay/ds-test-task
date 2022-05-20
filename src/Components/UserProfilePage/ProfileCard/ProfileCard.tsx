@@ -24,7 +24,7 @@ const ProfileCard:FC <UserPageState> = (props) => {
     return (
         <div className={style.ProfileCard}>
             <div className={style.ProfileCardNameBox}>
-                <span className={style.ProfileCardName}></span>
+                <div className={style.ProfileCardName}><span className={style.UserName}>{user?.profileName}</span></div>
             </div>
             <div className={style.ProfileCardInfo}>
                 <span className={style.ProfileCardInfoBox}>{user?.location}</span>
