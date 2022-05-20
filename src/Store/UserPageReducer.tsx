@@ -1,47 +1,38 @@
 let initialState: UserPageState = {
-    userData: [
-        {
-            name:"Семен",
-            surname:"Иванов",
-            location:"Санкт-Петербург",
-            id: 1
-        },
-        {
-            name:"Надежда",
-            surname:"Николаевна",
-            location:"Москва",
-            id: 1
-        },
-        {
-            name:"Петр",
-            surname:"Сабуров",
-            location:"Сочи",
-            id: 1
-        },
-        {
-            name:"Мария",
-            surname:"Гончарова",
-            location:"Москва",
-            id: 1
-        },
-    ]
-}
+  userData: [
+  ],
+};
 
 export interface User {
-    name:string;
-    surname:string;
-    location:string;
-    id:number;
+  name: string;
+  surname: string;
+  location: string;
+  id: number;
 }
 
 export interface UserPageState {
-    userData: User[];
+  userData: User[];
 }
 
-type ActionTypes = ""
+type ActionTypes = "SET_USERS";
 
-const UserPageReducer = (state = initialState, action: { type: ActionTypes } & UserPageState) => {
-    return state
-}
+const UserPageReducer = (
+  state = initialState,
+  action: { type: ActionTypes } & UserPageState
+) => {
+  switch (action.type) {
+    case "SET_USERS": {
+      return {...state, userData: [...action.userData]};
+    }
+  }
+  return state;
+};
 
-export default UserPageReducer
+export const setUsersActionCreator = (userData:User[]) => {
+  return {
+    type: "SET_USERS",
+    userData: userData,
+  };
+};
+
+export default UserPageReducer;

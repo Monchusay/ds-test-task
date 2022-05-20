@@ -1,9 +1,17 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect} from 'react';
 import style from "./ListOfUsers.module.css"
 import {UserPageState} from "../../../Store/UserPageReducer";
 import ListOfUsersElements from "./ListOfUsersElement/ListOfUsersElement";
+import axios from "axios";
+import {ListOfUsersDispatch} from "./ListOfUsersContainer";
 
-const ListOfUsers:FC <UserPageState> = (props) => {
+const ListOfUsers:FC <UserPageState & ListOfUsersDispatch> = (props) => {
+
+    useEffect(() => {
+        axios.get(`https://my-json-server.typicode.com/Monchusay/ds-test-task/userData`).then((response) => {
+            props.setUsers(response.data);
+        });
+    }, []);
 
     let ListOfUsersElement = props.userData.map((u) => (
         <ListOfUsersElements
@@ -11,6 +19,7 @@ const ListOfUsers:FC <UserPageState> = (props) => {
             name={u.name}
             surname={u.surname}
             location={u.location}
+            id={u.id}
         />
     ))
 

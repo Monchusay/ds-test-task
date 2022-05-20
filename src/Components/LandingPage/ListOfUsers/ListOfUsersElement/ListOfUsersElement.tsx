@@ -1,10 +1,12 @@
 import React, { FC } from "react";
 import style from "./ListOfUsersElement.module.css";
+import { NavLink } from "react-router-dom";
 
 const ListOfUsersElements: FC<{
   name: string;
   surname: string;
   location: string;
+  id:number;
 }> = (props) => {
   return (
     <div className={style.ListOfUsersElement}>
@@ -14,9 +16,9 @@ const ListOfUsersElements: FC<{
       </div>
       <span className={style.UserLocation}>{props.location}</span>
         <div className={style.GoToProfile}>
-            <span className={style.GoToProfileButton}>
+            <NavLink className={style.GoToProfileButton} to={`/user/${props.id}`}>
                 Смотреть профиль
-            </span>
+            </NavLink>
         </div>
     </div>
   );
