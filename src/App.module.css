@@ -3,7 +3,6 @@
 
 .App {
     width: 99.2vw;
-    height: 1800px;
     display: flex;
     flex-direction: column;
 }

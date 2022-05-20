@@ -1,6 +1,6 @@
 .AboutGroup {
     width: 85%;
-    height: 15%;
+    height: 200px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;

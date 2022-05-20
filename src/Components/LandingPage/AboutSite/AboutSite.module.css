@@ -1,8 +1,9 @@
 .AboutSite {
     width: 85%;
-    height: 25%;
+    height: 450px;
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
 }
 .AboutSiteContent {
     width: 50%;
