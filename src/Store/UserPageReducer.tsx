@@ -26,7 +26,7 @@ export interface PostDataState {
   postData: Post[];
 }
 
-type ActionTypes = "SET_USERS";
+type ActionTypes = "SET_USERS" | "SET_PREVIEW_POSTS"
 
 const UserPageReducer = (
   state = initialState,
@@ -44,6 +44,13 @@ export const setUsersActionCreator = (userData: User[]) => {
   return {
     type: "SET_USERS",
     userData: userData,
+  };
+};
+
+export const setPostsActionCreator = (postData: Post[]) => {
+  return {
+    type: "SET_PREVIEW_POSTS",
+    postData: postData,
   };
 };
 

@@ -3,9 +3,10 @@ import {Dispatch} from "redux";
 import {connect} from "react-redux";
 import PostPreview from "./PostPreview";
 
+
 let mapStateToProps = (state:State) => {
     return {
-        postData: state.UserPage.postData
+        postData: state.UserPage.postData,
     };
 };
 

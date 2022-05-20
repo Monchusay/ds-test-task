@@ -2,9 +2,9 @@ import React, { FC } from "react";
 import style from "./PostPreviewItem.module.css";
 
 const PostPreviewItem: FC<{
-  postPublishDate: string;
-  postHeader: string;
-  postPreview: string;
+  postPublishDate: any;
+  postHeader: any;
+  postPreview: any;
 }> = (props) => {
   return (
     <div className={style.PostPreviewItem}>

@@ -10,7 +10,7 @@ export interface ListOfUsersDispatch {
 
 let mapStateToProps = (state:State) => {
     return {
-        userData: state.UserPage.userData
+        userData: state.UserPage.userData,
     };
 };
 
