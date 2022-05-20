@@ -4,24 +4,32 @@
       "name":"Семен",
       "surname":"Иванов",
       "location":"Санкт-Петербург",
+      "email": "ivanov@mail.ru",
+      "phone": "+7 (821) 311-21-32",
       "id": 1
     },
     {
       "name":"Надежда",
       "surname":"Николаевна",
       "location":"Москва",
+      "email": "nikolaevna@mail.ru",
+      "phone": "+7 (800) 555-75-75",
       "id": 2
     },
     {
       "name":"Петр",
       "surname":"Сабуров",
       "location":"Сочи",
+      "email": "saburov@mail.ru",
+      "phone": "+7 (904) 789-71-43",
       "id": 3
     },
     {
       "name":"Мария",
       "surname":"Гончарова",
       "location":"Москва",
+      "email": "goncharov@mail.ru",
+      "phone": "+7 (904) 537-13-69",
       "id": 4
     }
   ]

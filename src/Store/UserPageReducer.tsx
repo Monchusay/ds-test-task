@@ -1,6 +1,5 @@
 let initialState: UserPageState = {
-  userData: [
-  ],
+  userData: [],
 };
 
 export interface User {
@@ -8,6 +7,8 @@ export interface User {
   surname: string;
   location: string;
   id: number;
+  email:string;
+  phone:string;
 }
 
 export interface UserPageState {
