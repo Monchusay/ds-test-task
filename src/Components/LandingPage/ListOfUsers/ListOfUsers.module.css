@@ -1,0 +1,25 @@
+.ListOfUsers {
+    width: 85%;
+    height: 20%;
+}
+.ListOfUsersHeader {
+    width: 100%;
+    height: 23%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 40px;
+    color: black;
+}
+.ListOfUsersContent {
+    width: 100%;
+    height: 77%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

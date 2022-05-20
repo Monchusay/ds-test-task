@@ -1,0 +1,114 @@
+.AboutSite {
+    width: 85%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+.AboutSiteContent {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+}
+.AboutSiteContentHeader {
+    width: 100%;
+    height: 18%;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.AboutSiteContentMainObj {
+    width: 100%;
+    height: 82%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.AboutSiteSlider {
+    width: 0.5%;
+    height: 80%;
+    background-color: #DADADA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AboutSiteContentMainObjContent {
+    width: 90%;
+    height: 100%;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.AboutSiteContentMainObjHeader {
+    width: 80%;
+    height: 20%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: black;
+    word-spacing: 5px;
+    display: flex;
+}
+.AboutSiteContentMainObjText {
+    width: 80%;
+    height: 50%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 29px;
+    color: #939393;
+}
+.AboutSiteSubmitBox {
+    width: 50%;
+    height: 100%;
+    border: 1px solid #DADADA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.AboutSiteSubmitBoxHeader {
+    width: 90%;
+    height: 20%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+.AboutSiteSubmitBoxTextArea {
+    width: 85%;
+    height: 50%;
+    padding-top: 20px;
+    padding-left: 40px;
+    border: 2px solid #0D1E4B;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+}
+.AboutSiteSubmitBoxB {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.AboutSiteSubmitBoxButton {
+    width: 150px;
+    height: 45px;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

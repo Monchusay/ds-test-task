@@ -1,0 +1,58 @@
+.ListOfUsersElement {
+    width: 23%;
+    height: 75%;
+    border: 1px solid #DADADA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+.UserName {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 23px;
+    letter-spacing: 1.5px;
+}
+.UserSurname {
+    margin-left: 5px;
+    letter-spacing: 1.5px;
+}
+.UserLocation {
+    width: 90%;
+    height: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.41);
+    display: flex;
+}
+.GoToProfile {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+.GoToProfileButton {
+    width: 70%;
+    height: 60%;
+    background-color: #101010;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 15px;
+    cursor: pointer;
+}
+.ListOfUsersElement:hover {
+    transition: 0.5s;
+    box-shadow: 0px 0px 14px 3px rgba(17, 80, 129, 0.2);
+}

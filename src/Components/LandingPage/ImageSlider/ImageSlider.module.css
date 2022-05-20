@@ -1,0 +1,71 @@
+.LandingPageImageSlider {
+    width: 100%;
+    height: 40%;
+    background-image: url("https://bananastreet.ru/system/release/cover/2/28/28985/6412a54272.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px -94px 49px -7px rgba(0, 0, 0, 0.84) inset;
+}
+.LandingPageImageSliderContent {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    cursor: default;
+}
+.LandingPageImageSliderContentHeader {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: white;
+}
+.LandingPageImageSliderContentTime {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: white;
+}
+.LandingPageImageSliderNav {
+    width: 85%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.LandingPageImageSliderNavArrowBox {
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.LandingPageImageSliderNavArrowBox img {
+    width: 10px;
+}
+.RightArrow {
+    transform: rotate(180deg);
+}
+.LandingPageImageSliderNavBuyButton {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.LandingPageImageSliderNavBuyButton:hover {
+    background-color: lightgray;
+    transition: 0.3s;
+}
