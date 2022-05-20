@@ -1,15 +1,15 @@
 import React, { FC } from "react";
 import style from "./PostPreview.module.css";
-import { UserPageState } from "../../../Store/UserPageReducer";
+import {PostDataState} from "../../../Store/UserPageReducer";
 import PostPreviewItem from "./PostPrevewItem/PostPreviewItem";
 
-const PostPreview: FC<UserPageState> = (props) => {
+const PostPreview: FC<PostDataState> = (props) => {
 
-  let postPreviewElements = props.userData.map((p) => (
+  let postPreviewElements = props.postData.map((p) => (
     <PostPreviewItem
-      postHeader={p.postData.postHeader}
-      postPreview={p.postData.postPreview}
-      postPublishDate={p.postData.postPublishDate}
+      postHeader={p.postHeader}
+      postPreview={p.postPreview}
+      postPublishDate={p.postPublishDate}
     />
   ));
   return (

@@ -16,6 +16,7 @@ export interface Post {
   postHeader:string;
   postPreview:string;
   postPublishDate:string;
+  id:number;
 }
 
 export interface UserPageState {

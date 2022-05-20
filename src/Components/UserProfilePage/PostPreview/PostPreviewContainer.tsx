@@ -5,7 +5,7 @@ import PostPreview from "./PostPreview";
 
 let mapStateToProps = (state:State) => {
     return {
-        userData: state.UserPage.userData
+        postData: state.UserPage.postData
     };
 };
 
