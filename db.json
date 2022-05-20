@@ -3,6 +3,7 @@
     {
       "name":"Семен",
       "surname":"Иванов",
+      "profileName": "Семен Иванов",
       "location":"Санкт-Петербург",
       "email": "ivanov@mail.ru",
       "phone": "+7 (821) 311-21-32",
@@ -11,6 +12,7 @@
     {
       "name":"Надежда",
       "surname":"Николаевна",
+      "profileName": "Надежда Николаевна",
       "location":"Москва",
       "email": "nikolaevna@mail.ru",
       "phone": "+7 (800) 555-75-75",
@@ -19,6 +21,7 @@
     {
       "name":"Петр",
       "surname":"Сабуров",
+      "profileName": "Петр Сабуров",
       "location":"Сочи",
       "email": "saburov@mail.ru",
       "phone": "+7 (904) 789-71-43",
@@ -27,6 +30,7 @@
     {
       "name":"Мария",
       "surname":"Гончарова",
+      "profileName": "Мария Гончарова",
       "location":"Москва",
       "email": "goncharov@mail.ru",
       "phone": "+7 (904) 537-13-69",

@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./UserProfilePage.module.css";
-import ProfileCard from "./ProfileCard/ProfileCard";
+import ProfileCardContainer from "./ProfileCard/ProfileCardContainer";
 
 const UserProfilePage = () => {
   return (
     <div className={style.UserProfilePage}>
-      <ProfileCard />
+      <ProfileCardContainer />
     </div>
   );
 };
