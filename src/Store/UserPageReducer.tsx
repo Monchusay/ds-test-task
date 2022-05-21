@@ -13,6 +13,7 @@ export interface User {
   profileName: string;
 }
 export interface Post {
+  fullPost: string;
   senderProfileName:string;
   postHeader:string;
   postPreview:string;

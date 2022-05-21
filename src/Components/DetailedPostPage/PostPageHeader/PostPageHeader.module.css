@@ -1,0 +1,16 @@
+.PostPageHeader {
+    width: 92%;
+    height: 8%;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 40px;
+}
+.Header {
+    padding-left: 20px;
+}

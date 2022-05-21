@@ -15,7 +15,7 @@ const PostPreview: FC<PostDataState & PreviewPostsDispatch> = (props) => {
     }, []);
 
     let PreviewPostElements = props.postData.map((p) => (
-        <PostPreviewItem id={p.id} key={Math.random()} postPublishDate={p.postPublishDate} postHeader={p.postHeader} postPreview={p.postPreview}/>
+        <PostPreviewItem id={p.id} key={p.id} postPublishDate={p.postPublishDate} postHeader={p.postHeader} postPreview={p.postPreview}/>
     ))
 
   return (
