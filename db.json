@@ -62,5 +62,17 @@
       "postPublishDate": "31.12.2020",
       "id": 3
     }
+  ],
+  "commentData": [
+    {
+      "postId": 1,
+      "senderName": "Надежда Николаевна",
+      "commentText": "Полностью согласна!"
+    },
+    {
+      "postId": 1,
+      "senderName": "Billy Herrington",
+      "commentText": "Так держать, Semen!"
+    }
   ]
 }

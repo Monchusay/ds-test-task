@@ -1,6 +1,7 @@
-let initialState: UserPageState & PostDataState = {
+let initialState: UserPageState & PostDataState & CommentSectionState = {
   userData: [],
-  postData: []
+  postData: [],
+  commentData: []
 };
 
 export interface User {
@@ -21,18 +22,27 @@ export interface Post {
   id:number;
 }
 
+export interface Comment {
+  postId: number;
+  senderName:string;
+  commentText:string;
+}
+
 export interface UserPageState {
   userData: User[];
 }
 export interface PostDataState {
   postData: Post[];
 }
+export interface CommentSectionState {
+  commentData: Comment[];
+}
 
 type ActionTypes = "SET_USERS" | "SET_PREVIEW_POSTS"
 
 const UserPageReducer = (
   state = initialState,
-  action: { type: ActionTypes } & UserPageState & PostDataState
+  action: { type: ActionTypes } & UserPageState & PostDataState & CommentSectionState
 ) => {
   switch (action.type) {
     case "SET_USERS": {

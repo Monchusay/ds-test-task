@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 const PostPageContent: FC<PostDataState> = (props) => {
-
   const [content, setContent] = useState<Post | null>(null);
   let { id } = useParams<{ id: string }>();
 
@@ -23,7 +22,11 @@ const PostPageContent: FC<PostDataState> = (props) => {
     }
   }, [id]);
 
-  return <div className={style.PostPageContent}>{content?.postPreview}</div>;
+  return (
+    <div className={style.PostPageContent}>
+      <span className={style.Content}>{content?.fullPost}</span>
+    </div>
+  );
 };
 
 export default PostPageContent;
