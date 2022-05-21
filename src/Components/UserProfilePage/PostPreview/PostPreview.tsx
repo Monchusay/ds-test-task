@@ -1,6 +1,6 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useEffect} from "react";
 import style from "./PostPreview.module.css";
-import { Post, PostDataState } from "../../../Store/UserPageReducer";
+import { PostDataState } from "../../../Store/UserPageReducer";
 import PostPreviewItem from "./PostPrevewItem/PostPreviewItem";
 import axios from "axios";
 import { PreviewPostsDispatch } from "./PostPreviewContainer";

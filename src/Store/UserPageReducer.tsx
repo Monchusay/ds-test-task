@@ -15,10 +15,10 @@ export interface User {
 }
 export interface Post {
   fullPost: string;
-  senderProfileName:string;
   postHeader:string;
   postPreview:string;
   postPublishDate:string;
+  senderId: number;
   id:number;
 }
 
