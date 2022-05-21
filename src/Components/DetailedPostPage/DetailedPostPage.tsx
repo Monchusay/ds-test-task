@@ -5,7 +5,7 @@ import PostPageContentContainer from "./PostPageContent/PostPageContentContainer
 import CommentsSectionContainer from "./CommentsSection/CommentsSectionContainer";
 
 const DetailedPostPage = () => {
-  return (
+    return (
     <div className={style.DetailedPostPage}>
       <PostPageHeaderContainer />
       <PostPageContentContainer />

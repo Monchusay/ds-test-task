@@ -1,7 +1,7 @@
-let initialState: UserPageState & PostDataState & CommentSectionState = {
+let initialState: UserPageState & PostDataState & CommentSectionState  = {
   userData: [],
   postData: [],
-  commentData: []
+  commentData: [],
 };
 
 export interface User {
@@ -38,7 +38,7 @@ export interface CommentSectionState {
   commentData: Comment[];
 }
 
-type ActionTypes = "SET_USERS" | "SET_POSTS" | "SET_COMMENTS"
+type ActionTypes = "SET_USERS" | "SET_POSTS" | "SET_COMMENTS" | "ADD_NEW_COMMENT"
 
 const UserPageReducer = (
   state = initialState,
@@ -54,6 +54,15 @@ const UserPageReducer = (
     case "SET_COMMENTS" : {
       return {...state, commentData: [...action.commentData]}
     }
+    /*case "ADD_NEW_COMMENT" : {
+      let NewComment = {
+        postId: Math.random(),
+        senderName: state.newCommentSenderName,
+        commentText: state.newCommentText
+      }
+      state.commentData.push(NewComment)
+      return state
+    }*/
   }
   return state;
 };

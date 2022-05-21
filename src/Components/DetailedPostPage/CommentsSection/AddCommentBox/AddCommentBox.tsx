@@ -1,18 +1,24 @@
 import React, { FC } from "react";
 import style from "./AddCommentBox.module.css";
 
-const AddCommentBox: FC<{ commentBox: boolean; setCommentBox: any }> = ({
+const AddCommentBox: FC<{ commentBox: boolean; setCommentBox: any}> = ({
   commentBox,
-  setCommentBox,
+  setCommentBox
 }) => {
   return (
     <div className={style.AddCommentBox}>
       <div className={style.Inputs}>
-        <input className={style.InputName} value="Введите имя" />
-        <input className={style.InputPhone} value="Введите номер телефона" />
+        <input
+          className={style.InputName}
+          placeholder="Введите имя"
+        />
+        <input
+          className={style.InputPhone}
+          placeholder="Введите номер телефона"
+        />
         <input
           className={style.InputComment}
-          value="Введите текст комментария"
+          placeholder="Введите текст комментария"
         />
       </div>
       <div className={style.ButtonBox}>
