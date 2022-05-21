@@ -1,12 +1,12 @@
 import { combineReducers, createStore } from "redux";
-import UserPageReducer, {PostDataState, UserPageState} from "./UserPageReducer";
+import UserPageReducer, {CommentSectionState, PostDataState, UserPageState} from "./UserPageReducer";
 
 let reducers = combineReducers<State>({
     UserPage: UserPageReducer,
 })
 
 export interface State {
-    UserPage:UserPageState & PostDataState
+    UserPage:UserPageState & PostDataState & CommentSectionState
 }
 
 let store = createStore(reducers)

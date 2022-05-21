@@ -4,7 +4,6 @@ import { Post, PostDataState } from "../../../Store/UserPageReducer";
 import PostPreviewItem from "./PostPrevewItem/PostPreviewItem";
 import axios from "axios";
 import { PreviewPostsDispatch } from "./PostPreviewContainer";
-import {useParams} from "react-router-dom";
 
 const PostPreview: FC<PostDataState & PreviewPostsDispatch> = (props) => {
 
