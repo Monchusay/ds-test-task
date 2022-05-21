@@ -65,11 +65,13 @@
   ],
   "commentData": [
     {
+      "id": 1,
       "postId": 1,
       "senderName": "Надежда Николаевна",
       "commentText": "Полностью согласна!"
     },
     {
+      "id": 2,
       "postId": 1,
       "senderName": "Billy Herrington",
       "commentText": "Так держать, Semen!"

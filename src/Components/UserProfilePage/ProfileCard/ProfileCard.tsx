@@ -7,19 +7,19 @@ import axios from "axios";
 const ProfileCard:FC <UserPageState> = (props) => {
 
     const [user, setUser] = useState<User | null>(null);
-    let { id } = useParams<{ id: string }>();
+    let { userId } = useParams<{ userId: string }>();
 
     useEffect(() => {
         if (props.userData.length === 0) {
             axios
-                .get(`https://my-json-server.typicode.com/Monchusay/ds-test-task/userData/${id}`)
+                .get(`https://my-json-server.typicode.com/Monchusay/ds-test-task/userData/${userId}`)
                 .then((response) => {
                 setUser(response.data);
             });
         } else {
-            setUser(props.userData.find((user) => user.id === Number(id)) || null);
+            setUser(props.userData.find((user) => user.id === Number(userId)) || null);
         }
-    }, [id]);
+    }, [userId]);
 
     return (
         <div className={style.ProfileCard}>

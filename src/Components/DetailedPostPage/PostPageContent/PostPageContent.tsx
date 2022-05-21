@@ -5,8 +5,9 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 const PostPageContent: FC<PostDataState> = (props) => {
+
   const [content, setContent] = useState<Post | null>(null);
-  let { id } = useParams<{ id: string }>();
+  let { id , userId } = useParams<{ id: string , userId: string}>();
 
   useEffect(() => {
     if (props.postData.length === 0) {

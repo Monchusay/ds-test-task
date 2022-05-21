@@ -1,30 +1,43 @@
-import React, { FC, useEffect} from "react";
+import React, { FC, useEffect } from "react";
 import style from "./PostPreview.module.css";
 import { PostDataState } from "../../../Store/UserPageReducer";
 import PostPreviewItem from "./PostPrevewItem/PostPreviewItem";
 import axios from "axios";
 import { PreviewPostsDispatch } from "./PostPreviewContainer";
+import { useParams } from "react-router-dom";
 
 const PostPreview: FC<PostDataState & PreviewPostsDispatch> = (props) => {
+  let { userId } = useParams<{ userId: string }>();
 
-    useEffect(() => {
-        axios.get(`https://my-json-server.typicode.com/Monchusay/ds-test-task/postData`).then((response) => {
-            props.setPosts(response.data);
-        });
-    }, []);
+  useEffect(() => {
+    axios
+      .get(
+        `https://my-json-server.typicode.com/Monchusay/ds-test-task/postData`
+      )
+      .then((response) => {
+        props.setPosts(response.data);
+      });
+  }, []);
 
-    let PreviewPostElements = props.postData.map((p) => (
-        <PostPreviewItem id={p.id} key={p.id} postPublishDate={p.postPublishDate} postHeader={p.postHeader} postPreview={p.postPreview}/>
-    ))
+  let PreviewPostElements = props.postData
+    .filter((post) => post.senderId === Number(userId))
+    .map((p) => (
+      <PostPreviewItem
+        userId={userId}
+        id={p.id}
+        key={p.id}
+        postPublishDate={p.postPublishDate}
+        postHeader={p.postHeader}
+        postPreview={p.postPreview}
+      />
+    ));
 
   return (
     <div className={style.PostPreview}>
       <div className={style.PostPreviewHeader}>
         <span className={style.Header}>Посты</span>
       </div>
-      <div className={style.PostPreviewBox}>
-          {PreviewPostElements}
-      </div>
+      <div className={style.PostPreviewBox}>{PreviewPostElements}</div>
     </div>
   );
 };
