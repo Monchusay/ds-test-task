@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import { Routes, BrowserRouter, Route } from "react-router-dom";
 import UserProfilePage from "./Components/UserProfilePage/UserProfilePage";
+import DetailedPostPage from "./Components/DetailedPostPage/DetailedPostPage";
 
 const App: FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: FC = () => {
         <Routes>
           <Route path="/*" element={<LandingPage />} />
           <Route path="/user/:id" element={<UserProfilePage />} />
+          <Route path="/post/:id" element={<DetailedPostPage />} />
         </Routes>
       </div>
     </BrowserRouter>

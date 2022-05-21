@@ -13,6 +13,7 @@ export interface User {
   profileName: string;
 }
 export interface Post {
+  senderProfileName:string;
   postHeader:string;
   postPreview:string;
   postPublishDate:string;
@@ -30,11 +31,14 @@ type ActionTypes = "SET_USERS" | "SET_PREVIEW_POSTS"
 
 const UserPageReducer = (
   state = initialState,
-  action: { type: ActionTypes } & UserPageState
+  action: { type: ActionTypes } & UserPageState & PostDataState
 ) => {
   switch (action.type) {
     case "SET_USERS": {
       return { ...state, userData: [...action.userData] };
+    }
+    case "SET_PREVIEW_POSTS": {
+      return {...state, postData: [...action.postData] };
     }
   }
   return state;

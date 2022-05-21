@@ -25,4 +25,7 @@
 .PostPreviewBox {
     width: 92%;
     height: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
