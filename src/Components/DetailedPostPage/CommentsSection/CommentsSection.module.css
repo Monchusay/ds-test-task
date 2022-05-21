@@ -7,3 +7,15 @@
     flex-direction: column;
     align-items: center;
 }
+.SendCommentButton {
+    width: 360px;
+    height: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}

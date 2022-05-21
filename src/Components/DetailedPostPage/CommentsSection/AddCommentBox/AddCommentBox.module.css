@@ -1,0 +1,64 @@
+.AddCommentBox {
+    width: 92%;
+    height: 30%;
+    margin-top: 15px;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Inputs {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ButtonBox {
+    width: 25%;
+    height: 88%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.AddCommentBoxButton {
+    width: 360px;
+    height: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.InputName {
+    width: 400px;
+    height: 30px;
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.60);
+}
+.InputPhone {
+    width: 400px;
+    height: 30px;
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.60);
+}
+.InputComment {
+    width: 1000px;
+    height: 100px;
+    margin-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.60);
+}
