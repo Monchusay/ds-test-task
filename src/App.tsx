@@ -11,16 +11,23 @@ const App: FC = () => {
   return (
     <BrowserRouter>
       <div className={style.App}>
-        <Header />
-        <Routes>
-          <Route path="/*" element={<LandingPage />} />
-          <Route path="/user/:userId" element={<UserProfilePage />} />
-          <Route
-            path="/user/:userId/post/:postId"
-            element={<DetailedPostPage />}
-          />
-          <Route path="/user/:userId/postList" element={<PostListContainer />} />
-        </Routes>
+        <div>
+          <Header />
+        </div>
+        <div>
+          <Routes>
+            <Route path="/*" element={<LandingPage />} />
+            <Route path="/user/:userId" element={<UserProfilePage />} />
+            <Route
+              path="/user/:userId/post/:postId"
+              element={<DetailedPostPage />}
+            />
+            <Route
+              path="/user/:userId/postList"
+              element={<PostListContainer />}
+            />
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );

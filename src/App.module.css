@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 .App {
-    width: 2068px;
+    width: 99vw;
     display: flex;
     flex-direction: column;
 }
