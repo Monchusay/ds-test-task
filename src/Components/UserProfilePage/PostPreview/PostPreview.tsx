@@ -4,9 +4,10 @@ import { PostDataState } from "../../../Store/UserPageReducer";
 import PostPreviewItem from "./PostPrevewItem/PostPreviewItem";
 import axios from "axios";
 import { PreviewPostsDispatch } from "./PostPreviewContainer";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 
 const PostPreview: FC<PostDataState & PreviewPostsDispatch> = (props) => {
+
   let { userId } = useParams<{ userId: string }>();
 
   useEffect(() => {
@@ -37,6 +38,10 @@ const PostPreview: FC<PostDataState & PreviewPostsDispatch> = (props) => {
     <div className={style.PostPreview}>
       <div className={style.PostPreviewHeader}>
         <span className={style.Header}>Посты</span>
+        <NavLink to={`/user/${userId}/postList/`} className={style.SeePosts}>
+          {" "}
+          Просмотреть все
+        </NavLink>
       </div>
       <div className={style.PostPreviewBox}>{PreviewPostElements}</div>
     </div>
