@@ -21,6 +21,7 @@ const PostPreview: FC<PostDataState & PreviewPostsDispatch> = (props) => {
 
   let PreviewPostElements = props.postData
     .filter((post) => post.senderId === Number(userId))
+    .slice(0, 3)
     .map((p) => (
       <PostPreviewItem
         userId={userId}

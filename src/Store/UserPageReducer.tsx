@@ -23,6 +23,7 @@ export interface Post {
 }
 
 export interface Comment {
+  id: number;
   postId: number;
   senderName:string;
   commentText:string;
@@ -42,7 +43,7 @@ type ActionTypes = "SET_USERS" | "SET_POSTS" | "SET_COMMENTS" | "ADD_NEW_COMMENT
 
 const UserPageReducer = (
   state = initialState,
-  action: { type: ActionTypes } & UserPageState & PostDataState & CommentSectionState
+  action: { type: ActionTypes } & UserPageState & PostDataState & CommentSectionState & Comment
 ) => {
   switch (action.type) {
     case "SET_USERS": {
@@ -54,15 +55,15 @@ const UserPageReducer = (
     case "SET_COMMENTS" : {
       return {...state, commentData: [...action.commentData]}
     }
-    /*case "ADD_NEW_COMMENT" : {
+    case "ADD_NEW_COMMENT" : {
       let NewComment = {
-        postId: Math.random(),
-        senderName: state.newCommentSenderName,
-        commentText: state.newCommentText
+        id: action.id,
+        postId: action.postId,
+        senderName: action.senderName,
+        commentText: action.commentText
       }
-      state.commentData.push(NewComment)
-      return state
-    }*/
+      return {...state,commentData: [...state.commentData, NewComment]}
+    }
   }
   return state;
 };
@@ -85,6 +86,16 @@ export const setCommentsActionCreator = (commentData: Comment[]) => {
   return {
     type: "SET_COMMENTS",
     commentData: commentData,
+  };
+};
+
+export const addNewCommentActionCreator = (comment:Comment) => {
+  return {
+    type: "ADD_NEW_COMMENT",
+    id: comment.id,
+    postId: comment.postId,
+    senderName: comment.senderName,
+    commentText: comment.commentText
   };
 };
 

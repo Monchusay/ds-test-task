@@ -1,4 +1,4 @@
-import {Comment, setCommentsActionCreator} from "../../../Store/UserPageReducer";
+import {addNewCommentActionCreator, Comment, setCommentsActionCreator} from "../../../Store/UserPageReducer";
 import {State} from "../../../Store/Redux-store";
 import {Dispatch} from "redux";
 import {connect} from "react-redux";
@@ -6,6 +6,7 @@ import CommentsSection from "./CommentsSection";
 
 export interface CommentsSectionDispatch {
     setComments:(commentData:Comment[])=> void;
+    addNewComment:(comment:Comment)=> void;
 }
 
 let mapStateToProps = (state:State) => {
@@ -19,6 +20,9 @@ let mapDispatchToProps = (dispatch:Dispatch)=> {
         setComments: (commentData:Comment[]) => {
             dispatch(setCommentsActionCreator(commentData))
         },
+        addNewComment: (comment:Comment) => {
+            dispatch(addNewCommentActionCreator(comment))
+        }
     };
 }
 

@@ -7,21 +7,22 @@ import axios from "axios";
 const PostPageHeader: FC<PostDataState> = (props) => {
 
   const [header, setHeader] = useState<Post | null>(null);
-  let { id } = useParams<{ id: string }>();
+
+  let { postId } = useParams<{ postId: string }>();
 
   useEffect(() => {
     if (props.postData.length === 0) {
       axios
         .get(
-          `https://my-json-server.typicode.com/Monchusay/ds-test-task/postData/${id}`
+          `https://my-json-server.typicode.com/Monchusay/ds-test-task/postData/${postId}`
         )
         .then((response) => {
           setHeader(response.data);
         });
     } else {
-      setHeader(props.postData.find((h) => h.id === Number(id)) || null);
+      setHeader(props.postData.find((h) => h.id === Number(postId)) || null);
     }
-  }, [id]);
+  }, [postId]);
 
   return (
     <div className={style.PostPageHeader}>

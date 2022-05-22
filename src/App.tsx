@@ -14,7 +14,7 @@ const App: FC = () => {
         <Routes>
           <Route path="/*" element={<LandingPage />} />
           <Route path="/user/:userId" element={<UserProfilePage />} />
-          <Route path="/user/:userId/post/:id" element={<DetailedPostPage />} />
+          <Route path="/user/:userId/post/:postId" element={<DetailedPostPage />} />
         </Routes>
       </div>
     </BrowserRouter>

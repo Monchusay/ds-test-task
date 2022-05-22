@@ -7,21 +7,21 @@ import axios from "axios";
 const PostPageContent: FC<PostDataState> = (props) => {
 
   const [content, setContent] = useState<Post | null>(null);
-  let { id , userId } = useParams<{ id: string , userId: string}>();
+  let { postId } = useParams<{ postId: string }>();
 
   useEffect(() => {
     if (props.postData.length === 0) {
       axios
         .get(
-          `https://my-json-server.typicode.com/Monchusay/ds-test-task/postData/${id}`
+          `https://my-json-server.typicode.com/Monchusay/ds-test-task/postData/${postId}`
         )
         .then((response) => {
           setContent(response.data);
         });
     } else {
-      setContent(props.postData.find((h) => h.id === Number(id)) || null);
+      setContent(props.postData.find((h) => h.id === Number(postId)) || null);
     }
-  }, [id]);
+  }, [postId]);
 
   return (
     <div className={style.PostPageContent}>

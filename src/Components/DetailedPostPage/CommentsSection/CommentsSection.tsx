@@ -5,10 +5,14 @@ import { CommentSectionState } from "../../../Store/UserPageReducer";
 import { CommentsSectionDispatch } from "./CommentsSectionContainer";
 import axios from "axios";
 import AddCommentBox from "./AddCommentBox/AddCommentBox";
+import { useParams } from "react-router-dom";
+import qs from 'qs';
 
 const CommentsSection: FC<CommentSectionState & CommentsSectionDispatch> = (
   props
 ) => {
+  let { postId } = useParams<{ postId: string }>();
+
   const [commentBox, setCommentBox] = useState<boolean>(false);
 
   useEffect(() => {
@@ -21,20 +25,39 @@ const CommentsSection: FC<CommentSectionState & CommentsSectionDispatch> = (
       });
   }, []);
 
-  let CommentSectionElements = props.commentData.map((c) => (
-    <CommentSectionItem
-      key={Math.random()}
-      postId={c.postId}
-      senderName={c.senderName}
-      commentText={c.commentText}
-    />
-  ));
+  let CommentSectionElements = props.commentData
+    .filter((comment) => comment.postId === Number(postId))
+    .map((c) => (
+      <CommentSectionItem
+        key={Math.random()}
+        postId={c.postId}
+        senderName={c.senderName}
+        commentText={c.commentText}
+      />
+    ));
+
+  let onSendComment = (newSenderName: string, newSentText: string) => {
+
+    let comment = {
+      id: Math.random(),
+      postId: Number(postId),
+      senderName: newSenderName,
+      commentText: newSentText,
+    };
+
+    props.addNewComment(comment);
+    setCommentBox(false);
+  };
 
   return (
     <div className={style.CommentsSection}>
       {CommentSectionElements}
       {commentBox ? (
-        <AddCommentBox commentBox={commentBox} setCommentBox={setCommentBox}/>
+        <AddCommentBox
+          onSendComment={onSendComment}
+          commentBox={commentBox}
+          setCommentBox={setCommentBox}
+        />
       ) : (
         <button
           className={style.SendCommentButton}
