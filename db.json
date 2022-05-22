@@ -115,6 +115,42 @@
       "postId": 1,
       "senderName": "Billy Herrington",
       "commentText": "Так держать, Semen!"
+    },
+    {
+      "id": 3,
+      "postId": 2,
+      "senderName": "LeTroll",
+      "commentText": "Найди работу, LOL"
+    },
+    {
+      "id": 4,
+      "postId": 2,
+      "senderName": "DeadlyParkourKillerDarkBrawlStarsAssassin2011",
+      "commentText": "как пичатать"
+    },
+    {
+      "id": 5,
+      "postId": 2,
+      "senderName": "Тимур Моисеев",
+      "commentText": "Люблю глупые мемы, наверное это уже понятно."
+    },
+    {
+      "id": 6,
+      "postId": 3,
+      "senderName": "Тимур Моисеев",
+      "commentText": "Возьмите меня на работу, пожалуйста. Я очень стараюсь."
+    },
+    {
+      "id": 7,
+      "postId": 4,
+      "senderName": "Вася Пупкин",
+      "commentText": "Фигня, у Олега Пирожкова посты круче"
+    },
+    {
+      "id": 8,
+      "postId": 6,
+      "senderName": "randomSenderName",
+      "commentText": "randomCommentText"
     }
   ]
 }
