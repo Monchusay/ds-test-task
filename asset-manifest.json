@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ds-test-task/static/css/main.7c9e7b2b.css",
-    "main.js": "/ds-test-task/static/js/main.59c61614.js",
+    "main.css": "/ds-test-task/static/css/main.555e9f92.css",
+    "main.js": "/ds-test-task/static/js/main.0582153a.js",
     "static/js/787.d77eb66c.chunk.js": "/ds-test-task/static/js/787.d77eb66c.chunk.js",
     "index.html": "/ds-test-task/index.html",
     "static/media/Arrow1.svg": "/ds-test-task/static/media/Arrow1.04a93dfe948d1c9fa52eeaa854c3cbf9.svg",
     "static/media/SliderLine.svg": "/ds-test-task/static/media/SliderLine.4784d77fa07b0a28a27cab3ed7cc501e.svg",
-    "main.7c9e7b2b.css.map": "/ds-test-task/static/css/main.7c9e7b2b.css.map",
-    "main.59c61614.js.map": "/ds-test-task/static/js/main.59c61614.js.map",
+    "main.555e9f92.css.map": "/ds-test-task/static/css/main.555e9f92.css.map",
+    "main.0582153a.js.map": "/ds-test-task/static/js/main.0582153a.js.map",
     "787.d77eb66c.chunk.js.map": "/ds-test-task/static/js/787.d77eb66c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c9e7b2b.css",
-    "static/js/main.59c61614.js"
+    "static/css/main.555e9f92.css",
+    "static/js/main.0582153a.js"
   ]
 }
