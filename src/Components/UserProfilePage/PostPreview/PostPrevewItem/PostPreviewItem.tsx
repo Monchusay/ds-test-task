@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import style from "./PostPreviewItem.module.css";
 import { NavLink } from "react-router-dom";
+import {LinkToTop} from "../../../../Helpers/LinkToTop";
 
 const PostPreviewItem: FC<{
   id: any;
@@ -10,7 +11,7 @@ const PostPreviewItem: FC<{
   userId: any;
 }> = (props) => {
   return (
-    <NavLink
+    <LinkToTop
       to={`/user/${props.userId}/post/${props.id}`}
       className={style.PostPreviewItem}
     >
@@ -19,7 +20,7 @@ const PostPreviewItem: FC<{
         <span className={style.Date}>{props.postPublishDate}</span>
       </div>
       <span className={style.PostPreviewItemContent}>{props.postPreview}</span>
-    </NavLink>
+    </LinkToTop>
   );
 };
 

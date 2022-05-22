@@ -23,7 +23,6 @@ export interface Post {
 }
 
 export interface Comment {
-  id: number;
   postId: number;
   senderName:string;
   commentText:string;
@@ -57,7 +56,6 @@ const UserPageReducer = (
     }
     case "ADD_NEW_COMMENT" : {
       let NewComment = {
-        id: action.id,
         postId: action.postId,
         senderName: action.senderName,
         commentText: action.commentText
@@ -92,7 +90,6 @@ export const setCommentsActionCreator = (commentData: Comment[]) => {
 export const addNewCommentActionCreator = (comment:Comment) => {
   return {
     type: "ADD_NEW_COMMENT",
-    id: comment.id,
     postId: comment.postId,
     senderName: comment.senderName,
     commentText: comment.commentText

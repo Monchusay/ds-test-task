@@ -6,7 +6,6 @@ import { CommentsSectionDispatch } from "./CommentsSectionContainer";
 import axios from "axios";
 import AddCommentBox from "./AddCommentBox/AddCommentBox";
 import { useParams } from "react-router-dom";
-import qs from 'qs';
 
 const CommentsSection: FC<CommentSectionState & CommentsSectionDispatch> = (
   props
@@ -37,15 +36,19 @@ const CommentsSection: FC<CommentSectionState & CommentsSectionDispatch> = (
     ));
 
   let onSendComment = (newSenderName: string, newSentText: string) => {
-
     let comment = {
-      id: Math.random(),
       postId: Number(postId),
       senderName: newSenderName,
       commentText: newSentText,
     };
 
-    props.addNewComment(comment);
+    axios
+        .post('https://my-json-server.typicode.com/Monchusay/ds-test-task/commentData', comment)
+        .then((response) => {
+          console.log(response)
+        });
+
+    props.addNewComment(comment)
     setCommentBox(false);
   };
 

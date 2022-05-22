@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import style from "./ListOfUsersElement.module.css";
 import { NavLink } from "react-router-dom";
+import {LinkToTop} from "../../../../Helpers/LinkToTop";
 
 const ListOfUsersElements: FC<{
   name: string;
@@ -16,9 +17,9 @@ const ListOfUsersElements: FC<{
       </div>
       <span className={style.UserLocation}>{props.location}</span>
         <div className={style.GoToProfile}>
-            <NavLink className={style.GoToProfileButton} to={`/user/${props.id}`}>
+            <LinkToTop className={style.GoToProfileButton} to={`/user/${props.id}`}>
                 Смотреть профиль
-            </NavLink>
+            </LinkToTop>
         </div>
     </div>
   );

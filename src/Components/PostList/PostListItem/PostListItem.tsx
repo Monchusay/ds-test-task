@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import {NavLink} from "react-router-dom";
 import style from "./PostListItem.module.css"
+import {LinkToTop} from "../../../Helpers/LinkToTop";
 
 const PostListItem: FC<{
     id: any;
@@ -10,7 +11,7 @@ const PostListItem: FC<{
     userId: any;
 }> = (props) => {
     return (
-        <NavLink
+        <LinkToTop
             to={`/user/${props.userId}/post/${props.id}`}
             className={style.PostListItem}
         >
@@ -19,7 +20,7 @@ const PostListItem: FC<{
                 <span className={style.Date}>{props.postPublishDate}</span>
             </div>
             <span className={style.PostListItemContent}>{props.postPreview}</span>
-        </NavLink>
+        </LinkToTop>
     );
 };
 

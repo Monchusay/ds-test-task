@@ -5,6 +5,7 @@ import PostPreviewItem from "./PostPrevewItem/PostPreviewItem";
 import axios from "axios";
 import { PreviewPostsDispatch } from "./PostPreviewContainer";
 import { NavLink, useParams } from "react-router-dom";
+import {LinkToTop} from "../../../Helpers/LinkToTop";
 
 const PostPreview: FC<PostDataState & PreviewPostsDispatch> = (props) => {
 
@@ -38,10 +39,10 @@ const PostPreview: FC<PostDataState & PreviewPostsDispatch> = (props) => {
     <div className={style.PostPreview}>
       <div className={style.PostPreviewHeader}>
         <span className={style.Header}>Посты</span>
-        <NavLink to={`/user/${userId}/postList/`} className={style.SeePosts}>
+        <LinkToTop to={`/user/${userId}/postList/`} className={style.SeePosts}>
           {" "}
           Просмотреть все
-        </NavLink>
+        </LinkToTop>
       </div>
       <div className={style.PostPreviewBox}>{PreviewPostElements}</div>
     </div>
