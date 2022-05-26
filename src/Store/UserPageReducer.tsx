@@ -1,4 +1,4 @@
-let initialState: UserPageState & PostDataState & CommentSectionState  = {
+let initialState: UserPageState & PostDataState & CommentSectionState = {
   userData: [],
   postData: [],
   commentData: [],
@@ -15,17 +15,17 @@ export interface User {
 }
 export interface Post {
   fullPost: string;
-  postHeader:string;
-  postPreview:string;
-  postPublishDate:string;
+  postHeader: string;
+  postPreview: string;
+  postPublishDate: string;
   senderId: number;
-  id:number;
+  id: number;
 }
 
 export interface Comment {
   postId: number;
-  senderName:string;
-  commentText:string;
+  senderName: string;
+  commentText: string;
 }
 
 export interface UserPageState {
@@ -38,29 +38,36 @@ export interface CommentSectionState {
   commentData: Comment[];
 }
 
-type ActionTypes = "SET_USERS" | "SET_POSTS" | "SET_COMMENTS" | "ADD_NEW_COMMENT"
+type ActionTypes =
+  | "SET_USERS"
+  | "SET_POSTS"
+  | "SET_COMMENTS"
+  | "ADD_NEW_COMMENT";
 
 const UserPageReducer = (
   state = initialState,
-  action: { type: ActionTypes } & UserPageState & PostDataState & CommentSectionState & Comment
+  action: { type: ActionTypes } & UserPageState &
+    PostDataState &
+    CommentSectionState &
+    Comment
 ) => {
   switch (action.type) {
     case "SET_USERS": {
       return { ...state, userData: [...action.userData] };
     }
     case "SET_POSTS": {
-      return {...state, postData: [...action.postData] };
+      return { ...state, postData: [...action.postData] };
     }
-    case "SET_COMMENTS" : {
-      return {...state, commentData: [...action.commentData]}
+    case "SET_COMMENTS": {
+      return { ...state, commentData: [...action.commentData] };
     }
-    case "ADD_NEW_COMMENT" : {
+    case "ADD_NEW_COMMENT": {
       let NewComment = {
         postId: action.postId,
         senderName: action.senderName,
-        commentText: action.commentText
-      }
-      return {...state,commentData: [...state.commentData, NewComment]}
+        commentText: action.commentText,
+      };
+      return { ...state, commentData: [...state.commentData, NewComment] };
     }
   }
   return state;
@@ -87,12 +94,12 @@ export const setCommentsActionCreator = (commentData: Comment[]) => {
   };
 };
 
-export const addNewCommentActionCreator = (comment:Comment) => {
+export const addNewCommentActionCreator = (comment: Comment) => {
   return {
     type: "ADD_NEW_COMMENT",
     postId: comment.postId,
     senderName: comment.senderName,
-    commentText: comment.commentText
+    commentText: comment.commentText,
   };
 };
 
