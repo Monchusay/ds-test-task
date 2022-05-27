@@ -45,7 +45,7 @@
     margin-left: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .AboutSiteContentMainObjHeader {
     width: 80%;
@@ -88,7 +88,7 @@
     cursor: default;
 }
 .AboutSiteSubmitBoxTextArea {
-    width: 85%;
+    width: 80%;
     height: 50%;
     padding-top: 20px;
     padding-left: 40px;
@@ -112,4 +112,73 @@
     border: none;
     color: white;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+    .AboutSiteSubmitBoxHeader {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .AboutSiteContentMainObjHeader {
+        font-size: 15px;
+    }
+    .AboutSiteContentMainObjText {
+        font-size: 14px;
+    }
+    .AboutSiteContentHeader {
+        font-size: 40px;
+    }
+    .AboutSiteSubmitBoxHeader {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .AboutSiteContentMainObjHeader {
+        font-size: 10px;
+        line-height: 17px;
+    }
+    .AboutSiteContentMainObjText {
+        font-size: 9px;
+        line-height: 23px;
+    }
+    .AboutSiteContentHeader {
+        font-size: 30px;
+    }
+    .AboutSiteSubmitBoxHeader {
+        font-size: 10px;
+    }
+    .AboutSiteContentMainObjContent {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .AboutSiteContentHeader {
+        font-size: 20px;
+        height: 13%;
+    }
+    .AboutSiteContentMainObjHeader {
+        font-size: 8px;
+        line-height: 13px;
+    }
+    .AboutSiteContentMainObjText {
+        font-size: 7px;
+        line-height: 18px;
+    }
+    .AboutSiteContentMainObjContent {
+        margin-left: 20px;
+    }
+    .AboutSiteSubmitBoxHeader {
+        font-size: 8px;
+        line-height: 13px;
+    }
+    .AboutSiteSubmitBoxTextArea {
+        width: 60%;
+        font-size: 8px;
+        line-height: 13px;
+    }
+    .AboutSiteSubmitBoxButton {
+        width: 100px;
+        height: 30px
+    }
 }

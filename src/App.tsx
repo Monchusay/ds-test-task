@@ -11,7 +11,7 @@ const App: FC = () => {
   return (
     <BrowserRouter>
       <div className={style.App}>
-        <div>
+        <div className={style.Header}>
           <Header />
         </div>
         <div>

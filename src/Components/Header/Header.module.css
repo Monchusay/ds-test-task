@@ -1,6 +1,6 @@
 .Header {
-    width: 1900px;
-    height: 8%;
+    width: 100vw;
+    height: 7%;
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -57,4 +57,26 @@
 .HeaderMyProfile:hover {
     background-color: lightgray;
     transition: 0.3s;
+}
+@media screen and (max-width: 720px) {
+    .HeaderSiteNameArea {
+        font-size: 23px;
+    }
+    .HeaderChangeStyle {
+        font-size: 13px;
+    }
+    .HeaderMyProfile {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .HeaderSiteNameArea {
+        font-size: 15px;
+    }
+    .HeaderChangeStyle {
+        font-size: 10px;
+    }
+    .HeaderMyProfile {
+        font-size: 10px;
+    }
 }

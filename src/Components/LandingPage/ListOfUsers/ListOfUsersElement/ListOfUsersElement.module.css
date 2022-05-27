@@ -14,9 +14,9 @@
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 23px;
     line-height: 23px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 }
 .UserSurname {
     margin-left: 5px;
@@ -24,7 +24,7 @@
 }
 .UserLocation {
     width: 90%;
-    height: 15%;
+    height: 10%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -56,4 +56,51 @@
 .ListOfUsersElement:hover {
     transition: 0.5s;
     box-shadow: 0px 0px 14px 3px rgba(17, 80, 129, 0.2);
+}
+@media screen and (max-width: 1400px) {
+    .UserName {
+        font-size: 17px;
+    }
+    .UserLocation {
+        font-size: 15px;
+    }
+    .GoToProfileButton {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .ListOfUsersElement {
+        width: 300px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .ListOfUsersElement {
+        width: 200px;
+        height: 100px;
+    }
+    .UserName {
+        font-size: 12px;
+    }
+    .UserLocation {
+        font-size: 10px;
+    }
+    .GoToProfileButton {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .ListOfUsersElement {
+        width: 150px;
+        height: 80px;
+    }
+    .UserName {
+        font-size: 10px;
+    }
+    .UserLocation {
+        font-size: 8px;
+    }
+    .GoToProfileButton {
+        font-size: 8px;
+    }
 }

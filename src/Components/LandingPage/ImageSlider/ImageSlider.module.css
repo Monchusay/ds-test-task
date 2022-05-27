@@ -8,6 +8,7 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 0px -94px 49px -7px rgba(0, 0, 0, 0.84) inset;
+    margin-top: 45px;
 }
 .LandingPageImageSliderContent {
     width: 40%;
@@ -68,4 +69,58 @@
 .LandingPageImageSliderNavBuyButton:hover {
     background-color: lightgray;
     transition: 0.3s;
+}
+@media screen and (max-width: 1400px) {
+    .LandingPageImageSlider {
+        height: 600px;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .LandingPageImageSliderContentHeader {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .LandingPageImageSliderContentHeader {
+        font-size: 40px;
+    }
+    .LandingPageImageSliderContentTime {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .LandingPageImageSliderContentTime {
+        font-size: 25px;
+    }
+    .LandingPageImageSliderContentHeader {
+        font-size: 25px;
+    }
+    .LandingPageImageSlider {
+        height: 450px;
+    }
+    .LandingPageImageSliderNavBuyButton {
+        width: 200px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .LandingPageImageSlider {
+        height: 300px;
+    }
+    .LandingPageImageSliderContentTime {
+        font-size: 15px;
+    }
+    .LandingPageImageSliderContentHeader {
+        font-size: 15px;
+    }
+    .LandingPageImageSliderNavArrowBox {
+        width: 40px;
+        height: 40px;
+    }
+    .LandingPageImageSliderNavBuyButton {
+        width: 150px;
+        height: 30px;
+        font-size: 10px;
+    }
 }

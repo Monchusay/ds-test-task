@@ -7,8 +7,7 @@
     height: 23%;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: center;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 500;
     font-size: 50px;
@@ -22,4 +21,42 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+@media screen and (max-width: 1140px) {
+    .ListOfUsersHeader {
+        font-size: 40px;
+    }
+    .ListOfUsers {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    .ListOfUsersContent {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .ListOfUsersHeader {
+        height: 15%
+    }
+}
+@media screen and (max-width: 720px) {
+    .ListOfUsersHeader {
+        font-size: 30px;
+    }
+    .ListOfUsers {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 470px) {
+    .ListOfUsersHeader {
+        font-size: 20px;
+        height: 25%;
+    }
+    .ListOfUsers {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+    }
 }
