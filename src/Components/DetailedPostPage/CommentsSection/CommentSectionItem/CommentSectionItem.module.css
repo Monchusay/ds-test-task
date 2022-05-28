@@ -29,3 +29,27 @@
     color: rgba(0, 0, 0, 0.60);
     cursor: default;
 }
+@media screen and (max-width: 980px) {
+    .SenderName {
+        font-size: 16px;
+    }
+    .CommentText {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .SenderName {
+        font-size: 13px;
+    }
+    .CommentText {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .SenderName {
+        font-size: 10px;
+    }
+    .CommentText {
+        font-size: 10px;
+    }
+}

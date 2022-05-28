@@ -19,3 +19,13 @@
     height: 80%;
     white-space: pre-line
 }
+@media screen and (max-width: 980px) {
+    .PostPageContent {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .PostPageContent {
+        font-size: 13px;
+    }
+}

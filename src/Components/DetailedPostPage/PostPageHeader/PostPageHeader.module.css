@@ -15,3 +15,18 @@
 .Header {
     padding-left: 20px;
 }
+@media screen and (max-width: 980px) {
+    .PostPageHeader {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .PostPageHeader {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .PostPageHeader {
+        height: 5%;
+    }
+}
