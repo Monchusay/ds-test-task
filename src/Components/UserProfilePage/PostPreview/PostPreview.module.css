@@ -38,3 +38,35 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+@media screen and (max-width: 1140px) {
+    .Header {
+        font-size: 40px;
+    }
+    .SeePosts {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .Header {
+        font-size: 30px;
+    }
+    .SeePosts {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .PostPreviewBox {
+        flex-direction: column;
+    }
+    .PostPreviewHeader {
+        height: 15%;
+    }
+}
+@media screen and (max-width: 470px) {
+    .Header {
+        font-size: 20px;
+    }
+    .SeePosts {
+        font-size: 20px;
+    }
+}

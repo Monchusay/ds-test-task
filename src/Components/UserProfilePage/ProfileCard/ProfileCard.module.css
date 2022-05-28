@@ -8,7 +8,7 @@
 }
 .ProfileCardNameBox {
     width: 100%;
-    height: 60%;
+    height: 40%;
     border-bottom: 1px solid #000000;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
 }
 .ProfileCardInfo {
     width: 92%;
-    height: 40%;
+    height: 60%;
     border-left: 1px solid #000000;
     border-right: 1px solid #000000;
     display: flex;
@@ -78,4 +78,71 @@
     font-size: 18px;
     line-height: 15px;
     cursor: pointer;
+}
+@media screen and (max-width: 1400px) {
+    .ProfileCardName {
+        font-size: 40px;
+    }
+    .ProfileCardInfoBox {
+        font-size: 20px;
+    }
+    .ProfileCardInfoBoxSend {
+        font-size: 15px;
+    }
+    .ProfileCardInfoBoxInvite {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .ProfileCardName {
+        font-size: 35px;
+    }
+    .ProfileCardInfoBox {
+        font-size: 15px;
+    }
+    .ProfileCardInfoBoxSend {
+        font-size: 12px;
+    }
+    .ProfileCardInfoBoxInvite {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .ProfileCardName {
+        font-size: 30px;
+    }
+    .ProfileCardInfoBox {
+        font-size: 12px;
+    }
+    .ProfileCardInfoBoxSend {
+        font-size: 10px;
+    }
+    .ProfileCardInfoBoxInvite {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .ProfileCard {
+        height: 20%;
+    }
+    .ProfileCardInfo {
+        display: flex;
+        flex-direction: column;
+    }
+    .ProfileCardInfoBox {
+        width: 100%;
+        height: 30%;
+        border-bottom: 1px solid black;
+    }
+    .ProfileCardInfoBoxSend{
+        width: 100%;
+        height: 100px;
+    }
+    .ProfileCardInfoBoxInvite {
+        width: 100%;
+        height: 100px;
+    }
+    .ProfileCardName {
+        justify-content: center;
+    }
 }

@@ -25,38 +25,130 @@
     justify-content: space-between;
 }
 .PublicationsItem1 {
-    width: 15%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     border: 1px solid #000000;
     background-color: #63B4EE;
 }
 .PublicationsItem2 {
-    width: 15%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     border: 1px solid #000000;
     background-color: #2B9FF2;
 }
 .PublicationsItem3 {
-    width: 15%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     border: 1px solid #000000;
     background-color: #547FED;
 }
 .PublicationsItem4 {
-    width: 15%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     border: 1px solid #000000;
     background-color: #4366E1;
 }
 .PublicationsItem5 {
-    width: 15%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     border: 1px solid #000000;
     background-color: #2040B0;
 }
 .PublicationsItem6 {
-    width: 15%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     border: 1px solid #000000;
     background-color: #0C257C;
+}
+@media screen and (max-width: 1400px) {
+    .PublicationsItem6 {
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+    }
+    .PublicationsItem5 {
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+    }
+    .PublicationsItem4 {
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+    }
+    .PublicationsItem3 {
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+    }
+    .PublicationsItem2 {
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+    }
+    .PublicationsItem1 {
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .PublicationsHeader {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .PublicationsHeader {
+        font-size: 30px;
+    }
+    .PublicationsContent {
+        width: 92%;
+        height: 55%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 720px) {
+    .PublicationsHeader {
+        font-size: 20px;
+    }
+    .PublicationsItem6 {
+        width: 100px;
+        height: 100px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .PublicationsItem5 {
+        width: 100px;
+        height: 100px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .PublicationsItem4 {
+        width: 100px;
+        height: 100px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .PublicationsItem3 {
+        width: 100px;
+        height: 100px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .PublicationsItem2 {
+        width: 100px;
+        height: 100px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .PublicationsItem1 {
+        width: 100px;
+        height: 100px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
 }
