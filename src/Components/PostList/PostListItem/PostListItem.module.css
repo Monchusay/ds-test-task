@@ -40,3 +40,32 @@
     transition: 0.5s;
     box-shadow: 0px 0px 30px 5px rgba(17, 80, 129, 0.2);
 }
+@media screen and (max-width: 980px) {
+    .PostListItem {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .PostListItem {
+        width: 85%;
+    }
+    .Header {
+        font-size: 20px;
+    }
+    .PostListItemContent {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .PostListItem {
+        height: 250px;
+    }
+    .Header {
+        font-size: 18px;
+    }
+    .PostListItemContent {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
